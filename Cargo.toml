@@ -32,7 +32,12 @@ features = ["serde-serialize"]
 version = "0.3.22"
 features = [
   "console",
-  "Window"
+  "Window",
+  "Document",
+  "HtmlElement",
+  "HtmlParagraphElement",
+  "Element",
+  "Node"
 ]
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
