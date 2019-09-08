@@ -23,6 +23,7 @@ pub fn main_js() -> Result<(), JsValue> {
 
     // error[E0425]: cannot find function `window` in module `web_sys`
     let window = web_sys::window().expect("no global `window` exists");
+    web_sys::console::log_1(&window);
 
     Ok(())
 }
