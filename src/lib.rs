@@ -21,5 +21,8 @@ pub fn main_js() -> Result<(), JsValue> {
     console_log!("Hello, world!");
     console_log!("the magic number is: {}", 42);
 
+    // error[E0425]: cannot find function `window` in module `web_sys`
+    let window = web_sys::window().expect("no global `window` exists");
+
     Ok(())
 }
